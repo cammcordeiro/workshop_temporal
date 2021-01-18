@@ -12,6 +12,7 @@ library(leaflet.minicharts)
 
 ### carregar dados
 dados <- read.xlsx("~/Google Drive/LECAR/projetos/Workshop temporal/DADOS/dados temporais_19Fev.xlsx", sheet=3)
+# dados <- read.xlsx("data/dados temporais_19Fev.xlsx", sheet=3) # Codigo JPQ
 head(dados)
 
 forms <- read.xlsx("~/Google Drive/LECAR/projetos/Workshop temporal/DADOS/Respostas workshop temporais.xlsx")
