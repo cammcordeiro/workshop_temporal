@@ -1,0 +1,49 @@
+"X1","X2","subjects","cor_node","tamanho"
+1.29529110791456,1.18353225042023,"Abrolhos","PELD site",3
+5.54757113993684,3.45518926295189,"CCAL","PELD site",3
+8.36498722500853,-8.43065465229921,"ELPA","PELD site",3
+-2.54939927959953,3.38425369362207,"HCES","PELD site",3
+-3.02272216375539,1.2349164256889,"ILOC","PELD site",3
+-3.51403454070347,-1.32856059984412,"PEBG","PELD site",3
+-4.6524354632744,0.689307862854294,"RECA","PELD site",3
+4.1107196818346,-3.57131270367673,"RLaC","PELD site",3
+2.44006565402452,4.84803499385567,"TAMS","PELD site",3
+1.36778259033258,2.70317283664826,"Jardim Botânico do Rio de Janeiro","Brazilian university",1
+-1.41382552214174,0.102114377664425,"INPE","govermental insitution",1
+3.85120236966126,2.23124278584543,"UFPE","Brazilian university",1
+2.72305922022865,1.19464104640567,"UFSB","Brazilian university",1
+2.86054487109442,-1.24746972953808,"UFRGS","Brazilian university",1
+-2.14914480358013,1.00329070880367,"UFF","Brazilian university",1
+3.29860050626674,3.1996421080951,"ICMBio","govermental insitution",1
+7.58847150910828,4.25981279744896,"ONG Biota","NGO",1
+9.66526961788602,-9.91902403108389,"University of South Carolina/USA","foreign institution",1
+6.51560543075344,-6.32383909730016,"FURG","Brazilian university",1
+0.100948205016044,0.628319169499503,"USP","Brazilian university",1
+-3.72671500722867,5.57727471729786,"UNISUL","Brazilian university",1
+-3.43324282515064,2.87060761767103,"UFPR","Brazilian university",1
+-4.11223845229324,3.00567681435644,"UFSC","Brazilian university",1
+-4.40488241020507,4.90679168047882,"UFBA","Brazilian university",1
+-3.52698430955864,-0.270750547373709,"UFRJ","Brazilian university",1
+-4.37174655811213,-0.158337436207672,"UFRN","Brazilian university",1
+-5.32107715590525,2.03780120053235,"UFSM","Brazilian university",1
+-5.05661239199693,-3.12547156528225,"UERJ","Brazilian university",1
+-5.55294262793335,-0.619724016397323,"UNIRIO","Brazilian university",1
+-5.86160907694105,-1.88651122254777,"UFRRJ","Brazilian university",1
+-5.71397980302036,-2.69122766167833,"Laboratório Nacional de Computação Científica","Brazilian university",1
+-4.37094923320113,-3.51663170410132,"University of Southern California","foreign institution",1
+-3.49664865631388,-3.43249757925929,"PUC-Rio","Brazilian university",1
+6.47118123141746,-3.35607023771447,"UEM","Brazilian university",1
+6.32260191399959,-4.61524101536463,"Universidade Luterana do Brasil/RS","Brazilian university",1
+2.93121005273292,-4.9212669701119,"UNESP","Brazilian university",1
+5.68422838695665,-2.66418127473529,"Embrapa","govermental insitution",1
+5.37296291927462,-5.01519285570833,"Environment Agency/Austria","foreign institution",1
+4.15714530211705,-5.27458326603177,"Universidad de la Republica/Uruguai","foreign institution",1
+3.47987661428797,-5.86619747010511,"Universidad Nacional de Mar del Plata/Argentina","foreign institution",1
+4.84687249624285,-5.87009795342941,"University of Kiel/Alemanha","foreign institution",1
+5.71587163830482,-3.93245971457251,"Goethe Universität Frankfurt/Alemanha","foreign institution",1
+4.27834504380897,5.87420906432915,"CEPENE","govermental insitution",1
+3.23959814390539,6.85528581549935,"Ibama","Brazilian university",1
+4.04890479804106,6.74195842629492,"UFC","Brazilian university",1
+2.53490433398097,7.29576944790823,"UFRPE","Brazilian university",1
+1.81374237710099,6.75639471868977,"UESC","Brazilian university",1
+-2.764565254335,5.57372783062057,"Oregon State University","foreign institution",1
