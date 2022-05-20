@@ -239,7 +239,8 @@ other_p <- formulario %>%
   unnest(cols = c(outro_produto)) %>% 
   mutate(outro_produto = trimws(.$outro_produto)) %>% 
   separate(outro_produto, c("categoria", "quant"), " = ") %>% 
-    mutate(quant = replace_na(quant, 1),
+  mutate(quant = as.numeric(quant) %>% 
+           replace_na(., 1),
          categoria = plyr::mapvalues(categoria, from = c("capitulo_livro", "livros", "protocolos", "videos", 
                                                          "trabalhos_tecnicos", "jogos", "desenho animado Mar a Vista",
                                                          "Manual de Monitoramento Reef Check Brasil", "Videos",
