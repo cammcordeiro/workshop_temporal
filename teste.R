@@ -1,4 +1,32 @@
+dados %>% 
+  filter(peld == "PELD") %>% 
+  select(nome_programa, habitat, grupos_biologicos, variaveis, frequencia) %>% 
+  distinct() %>% 
+  group_by(frequencia) %>% 
+  summarise(conta = n_distinct(nome_programa),
+            freq = conta / 28) %>% 
+  arrange(-conta)
 
+
+
+### project duration
+c(x = 2003, y = "ILOC", xend = 2016, yend = 9),
+c(x = 2016, y = "ILOC", xend = 2020, yend = 9),
+c(x = 2010, y = "TAMS", xend = 2020, yend = 8),
+c(x = 2016, y = "TAMS", xend = 2020, yend = 8), 
+c(x = 2016, y = "CCAL", xend = 2020, yend = 7),
+c(x = 2006, y = "Abrolhos", xend = 2020, yend = 6)
+c(x = 2012, y = "HCES", xend = 2016, yend = 5),
+c(x = 2016, y = "HCES", xend = 2020, yend = 5),
+c(x = 2000, y = "RLaC", xend = 2020, yend = 4),
+c(x = 1974, y = "RECA", xend = 2016, yend = 3),
+c(x = 2016, y = "RECA", xend = 2020, yend = 3), 
+c(x = 1997, y = "PEBG", xend = 2020, yend = 2), c
+c(x = 1993, y = "ELPA", xend = 2020, yend = 1), color = "darkblue", size = 3) + # ELPA
+  scale_y_discrete(limits=rev(c("ILOC", "TAMS", "CCAL", "Abrolhos", "HCES", "RLaC", "RECA", "PEBG", "ELPA")))
+
+
+####################################
 # institutions' network
 
 links <- formulario %>% 
@@ -139,7 +167,7 @@ deg.dist <- degree_distribution(net, cumulative=T, mode="all")
 plot(x = 0:max(deg), y = 1-deg.dist, pch = 19, las = 1,
      cex=1.2, col="orange", xlab="Degree", ylab="Cumulative Frequency")
 
-degree(net, mode="in")
+degree(net, mode="out")
 centr_degree(net, mode="in", normalized=T)
 
 ##
