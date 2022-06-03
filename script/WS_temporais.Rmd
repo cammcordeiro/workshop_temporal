@@ -108,7 +108,7 @@ mapa <- ggplot(data = world) +
 anos <- ggplot(data.frame()) +
   geom_point() +
   xlim(1974, 2020) +
-  geom_segment(aes(x = 2003, y = "ILOC", xend = 2016, yend = 9)) + # ILOC
+  geom_segment(aes(x = 2003, y = "ILOC", xend = 2016, yend = 9)) + # ILOC 
   geom_segment(aes(x = 2016, y = "ILOC", xend = 2020, yend = 9), color = "darkblue", size = 3) + # ILOC
   geom_segment(aes(x = 2010, y = "TAMS", xend = 2020, yend = 8)) + # TAMS +
     geom_segment(aes(x = 2016, y = "TAMS", xend = 2020, yend = 8), color = "darkblue", size = 3) + # TAMS

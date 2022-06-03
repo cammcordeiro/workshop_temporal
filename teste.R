@@ -1,3 +1,5 @@
+
+### sampling frequency
 dados %>% 
   filter(peld == "PELD") %>% 
   select(nome_programa, habitat, grupos_biologicos, variaveis, frequencia) %>% 
@@ -10,20 +12,17 @@ dados %>%
 
 
 ### project duration
-c(x = 2003, y = "ILOC", xend = 2016, yend = 9),
-c(x = 2016, y = "ILOC", xend = 2020, yend = 9),
-c(x = 2010, y = "TAMS", xend = 2020, yend = 8),
-c(x = 2016, y = "TAMS", xend = 2020, yend = 8), 
-c(x = 2016, y = "CCAL", xend = 2020, yend = 7),
-c(x = 2006, y = "Abrolhos", xend = 2020, yend = 6)
-c(x = 2012, y = "HCES", xend = 2016, yend = 5),
-c(x = 2016, y = "HCES", xend = 2020, yend = 5),
-c(x = 2000, y = "RLaC", xend = 2020, yend = 4),
-c(x = 1974, y = "RECA", xend = 2016, yend = 3),
-c(x = 2016, y = "RECA", xend = 2020, yend = 3), 
-c(x = 1997, y = "PEBG", xend = 2020, yend = 2), c
-c(x = 1993, y = "ELPA", xend = 2020, yend = 1), color = "darkblue", size = 3) + # ELPA
-  scale_y_discrete(limits=rev(c("ILOC", "TAMS", "CCAL", "Abrolhos", "HCES", "RLaC", "RECA", "PEBG", "ELPA")))
+data.frame(inicio = c(2003,2016,2010,2016,2016,2006,
+                        2012,2016,2000,1974,2016,1997,1993),
+              programa = c("ILOC","ILOC","TAMS","TAMS","CCAL",
+                           "Abrolhos", "HCES","HCES",
+                           "RLaC","RECA","RECA","PEBG","ELPA"), 
+              fim = c(2016, rep(2022, 5), 2016, 2022, 2022, 2016,
+                              rep(2022, 3))) %>% 
+  mutate(age = fim-inicio) %>% 
+  summarise(media = mean(age),
+            sd = sd(age),
+            q = quantile(age, probs = c(0.25, 0.5, 0.75)))
 
 
 ####################################
